@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 350vh;
+}
+P{
+    color: #7fc142;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.flex {
+    display: flex;
+}
+.flex_space{
+    display: flex;
+    justify-content: space-between;
+}
+.primary-btn {
+    padding: 15px 40px;
+    background: #7fc142;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.secondary-btn {
+    padding: 15px 40px;
+    background:none;
+    border: 2px solid white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+    color: #fff;
+}
+header{
+    height: 10vh;
+    line-height: 10vh;
+    padding: 0 20px;
+}
+header img {
+    margin: 20px 0;
+}
+header ul{
+    display: inline-block;
+}
+header ul li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+header ul li a{
+    color: #000;
+    margin: 0 10px;
+    transition: 0.5s
+}
+header ul li a:hover,
+#menulist li a:hover {
+    color: #7fc142;
+}
+#menulist li a{
+    color: #fff;
+}
+header i{
+    margin:0 20px;
+}
+header button{
+    padding: 13px 40px;
+}
+header .navlinks span{
+    display: none;
+}
+.home {
+    height: 100vh;
+}
+.home .text {
+    position: fixed;
+    top: 35%;
+    left: 5%;
+    color: #fff;
+}
+.home.text h1{
+    font-size: 80px;
+    font-family: serif;
+    font-weight: 400;
+}
+.home p{
+    margin: 20px 0;
+    color: #fff;
+}
+.home button{
+    margin-right: 20px;
+}

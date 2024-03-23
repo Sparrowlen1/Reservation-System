@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang = "en" dir="itr">
+<head>
+    <title>WILDLIFE AND GAMEPARK RESERVATION SYSTEM </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ae23c62b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="wildlife icon.jpeg" alt="">
+            </div>
+            <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION WEBSITE</p>
+            <div class="navlinks">
+                <div id="search">
+                    <input type="search" name="Search" id="srch" placeholder="Search..." onkeyup="search()">
+                    <i class="fa-solid fa-magnifying-glass" id="btnSrch"></i>
+                </div>
+                <ul id="list" class="list-group"></ul>
+                <ul id="menulist">
+                    <li><a href="home">home</a></li>
+                    <li><a href="about">about</a></li>
+                    <li><a href="parks">parks</a></li>
+                    <li><a href="pages">pages</a></li>
+                    <li><a href="contactus.html">contact</a></li>
+                    <li><button class="primary-btn">BOOK NOW</button></li>
+                </ul>
+                <span class="fa-sharp fa-solid fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+<br>
+
+    <script>
+        var menulist = document.getElementById('menulist');
+        menulist.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if (menulist.style.maxHeight == "0px"){
+                menulist.style.maxHeight = "100vh";
+             }else{
+                menulist.style.maxHeight = "0px";
+             }
+        }
+    </script>
+    <section class="home">
+        <div class="content">
+            <div class="owl-carousel owl-theme">
+                <div class="item"> 
+                    <img src ="park-10.jpeg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION</p>
+                        
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src ="park-1.png" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION</p>
+                        
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src ="park-2.png" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION</p>
+                        
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src ="park-3.png" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION</p>
+                        
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src ="park-4.png" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION</p>
+                        
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src ="park-5.jpeg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION</p>
+                        
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src ="park-6.png" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION</p>
+                        
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src ="park-7.jpeg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION</p>
+                        
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"> 
+                    <img src ="park-8.png" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>SPARROWLEN WILDLIFE AND GAMEPARK RESERVATION</p>
+                        
+                        <div class="flex">
+                            <button class="primary-btn">READ MORE</button>
+                            <button class="secondary-btn">CONTACT US</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+
+    <section class="book">
+        <div class="container flex_space">
+            <div class="text">
+                <h1><span>Book</span>Your Park</h1>
+            </div>
+            <div class="form">
+                <form class="grid">
+                    <input type="date" placeholder="Arrival date">
+                    <input type="date" placeholder="Departure date">
+                    <input type="number" placeholder="Adults">
+                    <input type="number" placeholder="Children">
+                    <input type="submit" value="CHECK AVAILABILITY">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="about top">
+        <div class="container flex">
+            <div class="left">
+                <div class="heading">
+                    <h1>WELCOME</h1>
+                    <h2>SPARROWLEN RESERVES</h2>
+                </div>
+                <P>The illegal wildlife trade threatens not only the survival of entire species,such as elephants and rhinos,but also the livelihoods and,often,the very lives of millions of people across Africa who depend on tourism for a living</P>
+                <p>This website aims at providing the big five animals at a glance and facilitating the locla and international tourist to be available to know the top 7 gameparks in kenya and book a visit,hence reducing the cost of conducting a reconnaissance</p>
+                <p>The co-creatorsof this sytem are <span>BRIAN MUTUGI</span> and <span>DANIEL MUTHUI</span></p>
+                <p>>> Many African countries benefit from community-based conservation. This concept explores the relationship between wildlife and people and the notion that conserving every animal is also not sustainable because certain animals threaten human lives and crops. One of the biggest arguments in support of community-based conservation is that allowing people to gain economic benefits from wildlife incentivizes conservation. One country that benefits from adopting this strategy is Zambia. The Zambian government established a wildlife conservation fund to act as the responsible player for redistributing funds from the hunting industry into wildlife conservation and community development.
+
+                </p>
+                <br>
+                <button class="primary-btn">ABOUT US</button>
+            </div>
+            <div class="right">
+                <img src="deer.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="counter top">
+        <div class="container grid">
+            <div class="box">
+                <h1>2500</h1>
+                <hr>
+                <span>Customer</span>
+            </div>
+            <div class="box">
+                <h1>1250</h1>
+                <hr>
+                <span>Happy Customer</span>
+            </div>
+            <div class="box">
+                <h1>150</h1>
+                <hr>
+                <span>Expert Technicians</span>
+            </div>
+            <div class="box">
+                <h1>3550</h1>
+                <hr>
+                <span>Desktop repaired</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="parks">
+        <div class="container top">
+            <div class="heading">
+                <h1>EXPLORE</h1>
+                <h2><u><b>Our parks</b></u></h2>
+                <p>The illegal wildlife trade threatens not only the survival of entire species,such as elephants and rhinos,but also the livelihoods and,often,the very lives of millions of people across Africa who depend on tourism for a living</p>
+            </div>
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">
+                        <div class="image">
+                            <img src="../updated reservation website/park-1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>BEST PARKS</h2>
+                            <div class="rate-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Aberdare National Park was established in 1950 with an aim to conserve and protect the Aberdare Mountains. Since then it has grown to a size of an area of 767 km.
+                            <p>Aberdare National Park is best known as the site where in 1952, Princess Elizabeth became Queen after the death of her father King George VI, whilst staying at the Treetops Hotel.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>1050kshs<span><br>Per person</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../updated reservation website/park-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>BEST PARKS</h2>
+                            <div class="rate-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>hells gate lies SOuth of Lake Naivasha in Kenya, north west of Nairobi. It was established in 1984.A small national park, it is known for its wide variety of wildlife and for its scenary</p>
+                            <p>This includes the Fischer's Tower and central Tower columns and Hells gate gorge</p>
+                            <p>it is also home to 5 geothermal power stations at Olkaria</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>600kshs<span><br>Per person</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../updated reservation website/park-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>BEST PARKS</h2>
+                            <div class="rate-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Maasai Mara National Reserve is an area of preserved savvannah wilderness in southwestern Kenya, along the Tanzanian border. its animal inlcude lions, cheetahs, elephants,zebras and hippos</p>
+                            <p>wildebeest traverse its plains during their annual migration</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>650kshs<span><br>Per person</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../updated reservation website/park-4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>BEST PARKS</h2>
+                            <div class="rate-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Nairobi National park is a national park in Kenya that was established in 1946 about 7km south of Nairobi.Herbivores gather in the park during the dry season</p>
+                            <p>Despite its proximity to the city and its relative small size, it boasts a large and varied wildlife population,and is one of kenya's most successful rhinocerous sanctuaries</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>600kshs<span><br>Per person</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../updated reservation website/park-5.jpeg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>BEST PARKS</h2>
+                            <div class="rate-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>The most saline of Africa's large lakes, Turkana is an outstanding laboratory for the study of plant and animal communities. The three National Parks serve as a stopover for migrant waterfowl and are major breeding grounds for the Nile crocodile, hippopotamus and a variety of venomous snakes. The Koobi Fora deposits, rich in mammalian, molluscan and other fossil remains, have contributed more to the understanding of paleo-environments than any other site on the continent.</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>450kshs<span><br>Per person</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../updated reservation website/park-6.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>BEST PARKS</h2>
+                            <div class="rate-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>shimba hills is a small national reserve in the former COast province of Kenya,33km from Mombasa and 15km from the coast. The reserve is an area of coastal rainforest,woodland and grassland</p>
+                            <p>it is an important area for plant biodervisty -over 50% of the 159 rare plpants in kenya are found in the Shimba hills,including some endangered species of <span>cyad</span> and <span>orchids</span></p>
+                            <p>it is also a natioanlly important site for birds and butterflies</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>500kshs<span><br>Per person</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../updated reservation website/park-7.jpeg" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>BEST PARKS</h2>
+                            <div class="rate-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Tsavo East id one of the oldest and largesr park in Kenya at 13,747 square kilometres. Situated in a semi-arid area previously known as Taru Desert and was opened in April 1948</p>
+                            <p>it is located near the town of Voi in the Taita-Taveta county of the former Coast province</p>
+                            <p>the park is divided into the east and west sections by the A109 road and a railway</p>
+                            <p>some of the mammals found in the park include: Aardwolf, yellow baboon, cape bufallo, bushback, carcal, african wildcat,kirk's dik-dik,bat-eared fox,maasai giraffe among others</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>350kshs<span><br>Per person</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <div class="image">
+                            <img src="../updated reservation website/park-8.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>BEST PARKS</h2>
+                            <div class="rate-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>Sibiloi national park lies on the northeastern shore of lake Turkana in the Nothern Kenya. It was established in 1973 by the government of Kenya for the protection of wildlife and paleontologist sites there</p>
+                            <p>it covers 1,570km square and is internationally known for its fossils</p>
+                            <p>it was listed as UNESCO World Heritage Site in 1997 as a part of lake Turkana National Parks</p>
+                            <div class="button flex">
+                                <button class="primary-btn">BOOK NOW</button>
+                                <h3>450kshs<span><br>Per person</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    navText: ["<i class='fa-solid fa-chevron-left'></i>", "<i class='fa-solid fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2,
+            margin: 10,
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+    </script>
+<section class="gallery">
+    <div class="container top">
+        <div class="heading">
+            <h1>PHOTOS</h1>
+            <h2><u><b>Our gallery</b></u></h2>
+            <p>This website aims at providing the big five animals at a glance and facilitating the locla and international tourist to be available to know the top 10 gameparks in kenya and book a visit,hence reducing the cost of conducting a reconnaissance</p>
+        </div>
+        <div class="content mtop">
+            <div class="game-wrapper">
+                <a href="#"><div class="gw gw-1"><p>Hell's Gate</p></div></a>
+                <a href="#"><div class="gw gw-2"><p>Masai Mara Game reserve</p></div></a>
+                <a href="#"><div class="gw gw-3"><p>Nairobi Game Park</p></div></a>
+                <a href="#"><div class="gw gw-4"><p>Lake Nakuru Game Park</p></div></a>
+                <a href="#"><div class="gw gw-5"><p>Shimba Hills Game Park</p></div></a>
+            </div>
+            </div>
+            <br>
+            <br>
+            <div class="game-categories left">
+                   <div class="game-wrapper">
+                   <a href="#"><div class="gw gw-6"><p>Tsavo East National Park</p></div></a>
+                   <a href="#"><div class="gw gw-7"><p>Sibiloi National Park</p></div></a>
+                   <a href="#"><div class="gw gw-8"><p>South Turkana National Park</p></div></a>
+                   <a href="#"><div class="gw gw-9"><p>Hotel</p></div></a>
+                   <a href="#"><div class="gw gw-10"><p>Lake Nakuru Game Park</p></div></a>
+               </div>
+               </div>
+               </div>
+        </div>
+    </div>
+</section>    
+
+<br>
+<section class="services top">
+    <div class="container">
+        <div class="heading">
+            <h1>SERVICES</h1>
+            <h2><u><b>Our services</b></u></h2>
+            <p>Providing a firsthand view of the best 10 gameparks in the country and enable tourists both local and international tourist to be able to access the countries wildlife in the 10 gameparks </p>
+        </div>
+        <br>
+        <br>
+        <div class="content flex_space"> 
+            <div class="left grid2">
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-camera"></i>
+                        <h3>Photoshoot at an inclusive cost</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-bicycle"></i>
+                        <h3>Cycling activies offered at hells gate national park</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-sharp fa-solid fa-mountain"></i>
+                        <h3>Hill climbing activies</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-regular fa-record-vinyl"></i>
+                        <h3>Booking Parks Facilitation</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Customer top">
+    <div class="container">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+            <div class="item">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>
+                    World Wildlife Day 2022:  It is observed on 3 March to raise awareness about the world's wild animals and plants. The United Nations General Assembly (UNGA) on 20 December 2013, at its 68th session, proclaimed 3 March which is the day of signature of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) in 1973 as UN World Wildlife Day. Now, it is the most important annual event across the world dedicated to wildlife.</p>
+                <p>The day provides us an opportunity to celebrate various beautiful and varied forms of wild fauna and flora and to spread awareness about the several benefits that their conservation provides to people. It also reminds us about the urgent need to step up the fight against wildlife crime and human-induced reduction of species, which further have economic, environmental, and social impacts. Scroll down for some tweets.</p>
+                <p>There are over 22,000 endangered & critically endangered species on the IUCN Red List. Continued species loss is a threat to people and planet. For #WWD2022, let us all support conservation of vulnerable plants and animals. Learn more: http://wildlifeday.org  #RecoverKeySpecies</p>    
+                <h3>SPARROWLEN MUTHUI</h3>
+                <label>SPARROWLEN MUTHUI</label>
+            </div> 
+            <div class="item">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>
+                    World Wildlife Day 2022:  It is observed on 3 March to raise awareness about the world's wild animals and plants. The United Nations General Assembly (UNGA) on 20 December 2013, at its 68th session, proclaimed 3 March which is the day of signature of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) in 1973 as UN World Wildlife Day. Now, it is the most important annual event across the world dedicated to wildlife.</p>
+                <p>The day provides us an opportunity to celebrate various beautiful and varied forms of wild fauna and flora and to spread awareness about the several benefits that their conservation provides to people. It also reminds us about the urgent need to step up the fight against wildlife crime and human-induced reduction of species, which further have economic, environmental, and social impacts. Scroll down for some tweets.</p>
+                <p>There are over 22,000 endangered & critically endangered species on the IUCN Red List. Continued species loss is a threat to people and planet. For #WWD2022, let us all support conservation of vulnerable plants and animals. Learn more: http://wildlifeday.org  #RecoverKeySpecies</p>    
+                <h3>SPARROWLEN MUTHUI</h3>
+                <label>SPARROWLEN MUTHUI</label>
+            </div> 
+            <div class="item">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>
+                    World Wildlife Day 2022:  It is observed on 3 March to raise awareness about the world's wild animals and plants. The United Nations General Assembly (UNGA) on 20 December 2013, at its 68th session, proclaimed 3 March which is the day of signature of the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) in 1973 as UN World Wildlife Day. Now, it is the most important annual event across the world dedicated to wildlife.</p>
+                <p>The day provides us an opportunity to celebrate various beautiful and varied forms of wild fauna and flora and to spread awareness about the several benefits that their conservation provides to people. It also reminds us about the urgent need to step up the fight against wildlife crime and human-induced reduction of species, which further have economic, environmental, and social impacts. Scroll down for some tweets.</p>
+                <p>There are over 22,000 endangered & critically endangered species on the IUCN Red List. Continued species loss is a threat to people and planet. For #WWD2022, let us all support conservation of vulnerable plants and animals. Learn more: http://wildlifeday.org  #RecoverKeySpecies</p>    
+                <h3>SPARROWLEN MUTHUI</h3>
+                <label>SPARROWLEN MUTHUI</label>
+            </div> 
+    </div>
+</section>
+<script>
+$('.owl-carousel').owlCarousel({
+loop:true,
+margin:0,
+nav:false,
+dots:true,
+autoplay: true,
+autoplayTimeout: 1000,
+autoplayHoverPause: true,
+responsive:{
+    0:{
+        items:1
+    },
+    768:{
+        items:1,
+    },
+    1000:{
+        items:1
+    }
+}
+})
+</script>
+<section class="news top parks">
+    <div class="container">
+        <div class="heading">
+            <h1>NEWS</h1>
+            <h2><u><b>Our News</b></u></h2>
+            <p>Providing a firsthand view of the best 10 gameparks in the country and enable tourists both local and international tourist to be able to access the countries wildlife in the 10 gameparks </p>
+        </div>
+        <div class="content flex">
+            <div class="left grid2">
+                <div class="items">
+                    <div class="image">
+                        <img src="lionking.com" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>The news</h2>
+                        <div class="admin flex">
+                            <i class="fa-solid fa-user"></i>
+                            <label>Admin</label>
+                            <i class="fa-solid fa-heart"></i>
+                            <label> 500</label>
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                        <p>Lions are highly social cats, living in prides of up to 40 members. Each female tends to stay in her birth pride, whereas most young males leave the pride in small groups (coalitions) to create their own.</p> 
+                            <p>The African lion is a member of the genus Panthera, joining tigers, jaguars and leopards. What is special about this genus is that all species are able to roar.</p>
+                        </div>
+                </div>
+                <div class="content flex">
+                    <div class="left grid2">
+                        <div class="items">
+                        <div class="items">   
+                            <div class="image">
+                                <img src="hoppo.jpeg" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>The news</h2>
+                                <div class="admin flex">
+                                    <i class="fa-solid fa-user"></i>
+                                    <label>Admin</label>
+                                    <i class="fa-solid fa-heart"></i>
+                                    <label> 500</label>
+                                    <i class="fa-solid fa-comment"></i>
+                                </div>
+                                <p>Hippos are amphibious, spending their days in water – rivers, lakes, wetlands and muddy wallows – and emerging at sunset to feed.</p>
+                                <p>A hippo’s skin must remain moist, as it will crack if exposed to the air and sun for long periods. They secrete an oily red liquid from subdermal glands which is thought to function as a sunscreen, antibiotic and insect repellent. </p>
+                                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="newletter mtop">
+    <div class="container flex_space">
+        <h1>Subscribe to our newsletter</h1>
+        <input type="text" placeholder="Your Email">
+        <input type="text" value="Subscibe">
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <div class="container grid">
+        <div class="box">
+            <img src="wildlife icon.jpeg" alt="">
+            <p>THANK YOU FOR CHOOSING AS US THE NUMBER 1 BEST ONLINE GUIDE TO THE COUNTRIES WILDLIFE AND GAMEPARK RESERVATION WEBSITE</p>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i> 
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Links</h2>
+            <ul>
+                <li>Site history</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Services</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>Uoem Kenya</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <label>139 Gakwegori,mountain breeze estate</label><br>
+            <i class="fa-solid fa-phone"></i>
+            <label>0740063099</label><br>
+            <i class="fa-solid fa-envelope"></i>
+            <label>dannymuthui118@gmail.com</label><br>
+        </div>
+    </div>
+</footer>
+<div class="legal">
+    <p class="container">Copyright (c) 2023 Copyright Holder All Rights Reserved.</p>
+</div>
+</body>
+<script src="./index2.js"></script>
+</html>
